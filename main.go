@@ -24,7 +24,6 @@ func main() {
 func getMessages() (string, error) {
 	currentVersion, err := getCurrentTagVersion()
 	if err != nil {
-		println("Can't get current version:", err.Error())
 		return "", err
 	}
 	var msg string
