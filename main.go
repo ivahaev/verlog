@@ -11,7 +11,7 @@ import (
 func main() {
 	msg, err := getMessages()
 	if err != nil {
-		panic(err)
+		println("Can't read commit messages or version tag is not present")
 	}
 	msgs := strings.Split(msg, "\n")
 	for i, m := range msgs {
